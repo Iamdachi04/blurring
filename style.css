@@ -36,3 +36,19 @@ button{
 #blur-slider{
     width:80%;
 }
+
+#icon-toggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+button{
+    background: none;
+    border: none;
+    position: sticky;
+    top: 0;
+    margin-bottom: 5px;
+    z-index: 100;
+}
