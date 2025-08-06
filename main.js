@@ -7,7 +7,7 @@ const loadingText= document.querySelector(".loading-text");
       return (value) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
     function updateVisuals(value){
-      const blur= mapRange(value , 0,100,20,0);
+      const blur= mapRange(value , 0,100,70,0);
       const opacity = mapRange(value,0,100,1,0);
       image.style.filter = 'blur('+blur+'px';
       loadingText.innerText= `${value.toFixed(1)}%`;

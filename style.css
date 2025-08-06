@@ -18,7 +18,8 @@ button{
     height: auto;
     background-color: #eee;
     display: block;
-    filter: blur(20px);
+    filter: blur(70px);
+    transition: all 5s ease-out;
 }
 
 .loading-text{
@@ -29,6 +30,7 @@ button{
     color: white;
     font-size: 24px;
     font-weight: bold;
+    transition: all 5s ease-out;
 }
 
 #blur-slider{
