@@ -27,4 +27,14 @@ const iconToggle = document.getElementById("icon-toggle");
     updateVisuals(parseFloat(slider.value)); // initialization
 
 
+    iconToggle.addEventListener("click",(event)=>{
+        if(parseFloat(slider.value)>80){
+            slider.value = 0;
+        }
+        else{
+            slider.value=100;
+        }
+        updateVisuals(parseFloat(slider.value));
+    })
+
 })

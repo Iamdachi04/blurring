@@ -52,3 +52,14 @@ button{
     margin-bottom: 5px;
     z-index: 100;
 }
+
+#blur-slider::-webkit-slider-thumb:active{
+    color: black;
+    transform: scale(1.4);
+}
+
+#blur-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    transition: transform 0.2s ease-out;
+    cursor: pointer;
+}
