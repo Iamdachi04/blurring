@@ -13,5 +13,10 @@ const loadingText= document.querySelector(".loading-text");
       loadingText.innerText= `${value.toFixed(1)}%`;
       loadingText.style.opacity = opacity;
     }
+    slider.addEventListener("input",(event)=>{
+        const the_val = parseFloat(event.target.value);
+        updateVisuals(the_val);
+    })
+    updateVisuals(parseFloat(slider.value)); // initialization
 
 })
